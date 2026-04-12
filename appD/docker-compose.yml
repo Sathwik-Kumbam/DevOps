@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: twenty
+      POSTGRES_PASSWORD: twenty
+      POSTGRES_DB: twenty
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+
+  app:
+    image: twentycrm/twenty:latest
+    container_name: twenty-app
+    restart: always
+    ports:
+      - "80:3000"
+    environment:
+      DATABASE_URL: postgres://twenty:twenty@db:5432/twenty
+      PGHOST: db
+      PGPORT: 5432
+      PGUSER: twenty
+      PGPASSWORD: twenty
+      PGDATABASE: twenty
+      REDIS_URL: redis://redis:6379
+      CACHE_STORAGE_TYPE: redis
+      NODE_ENV: production
+      APP_SECRET: mysecret123
+      PORT: 3000
+      HOST: 0.0.0.0
+      SERVER_URL: http://35.177.247.150
+    depends_on:
+      - db
+      - redis
+
+volumes:
+  db_data:
