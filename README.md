@@ -196,11 +196,6 @@ APP_SECRET=supersecret
 
 ---
 
-##  Loki (Logging)
-
-* Collects logs from containers
-* Centralized logging system
-
 ---
 
 ##  Monitoring Flow
@@ -254,7 +249,26 @@ Grafana dashboard provides:
 * Disk usage
 * Network activity
 * System uptime
+CPU BASIC
 <img width="720" height="332" alt="image" src="https://github.com/user-attachments/assets/f0bed68e-bee1-4f11-83fd-9be80365c3e7" />
+
+Memory Basic
+<img width="723" height="377" alt="image" src="https://github.com/user-attachments/assets/27942fcd-5fdb-4316-aea0-e5190d2de3cc" />
+
+Network Traffic Basic
+<img width="725" height="357" alt="image" src="https://github.com/user-attachments/assets/7bbf1eb4-2660-4c3c-a8f7-39318a26f174" />
+
+Disc Space Used Basic
+<img width="714" height="284" alt="image" src="https://github.com/user-attachments/assets/cb0f4dd6-4379-4ed2-a062-d06869de6ee3" />
+
+CPU
+<img width="722" height="308" alt="image" src="https://github.com/user-attachments/assets/91be8dcb-fd8b-418a-80e9-d12702d58639" />
+
+These are the images from grafana dashboard showing metrics of our application server.
+
+
+
+
 
 This helps in **real-time monitoring of system health**
 
