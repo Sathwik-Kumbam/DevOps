@@ -254,8 +254,10 @@ Grafana dashboard provides:
 * Disk usage
 * Network activity
 * System uptime
+<img width="720" height="332" alt="image" src="https://github.com/user-attachments/assets/f0bed68e-bee1-4f11-83fd-9be80365c3e7" />
 
 This helps in **real-time monitoring of system health**
+
 
 ---
 
