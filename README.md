@@ -7,6 +7,9 @@ This project demonstrates deploying an application on AWS EC2 using docker and p
   - AWS EC2
   - Docker
   - Terraform
+We can access Twenty crm through the ip address : http://35.177.247.150/
+We can access Grafana Dashboard through : http://35.177.247.150:3001/
+
 
 This project demonstrates a complete DevOps workflow including:
 
@@ -122,11 +125,7 @@ All services are defined in `docker-compose.yml`:
 docker-compose up -d
 ```
 
-4. Application becomes available at:
-
-```text
-http://<Elastic-IP>
-```
+4. Application becomes available at: http://35.177.247.150/
 
 ---
 
